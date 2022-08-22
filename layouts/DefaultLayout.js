@@ -12,7 +12,7 @@ export default function DefaultLayout(props) {
 			<nav className={styles.nav}>
 				<a href="/" className={styles.nav_logo}>
 					{/* Replace with <img /> if importing logo as image */}
-					<p className={styles.nav_logo_typography}>Artist Name</p>
+					<p className={styles.nav_logo_typography}>Jane Doe</p>
 				</a>
 
 				<a

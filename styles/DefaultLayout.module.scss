@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
 
 .nav {
 	display: flex;
@@ -10,14 +10,19 @@
 	font-family: Roboto Mono;
 	line-height: 1rem;
 	font-size: 1.5rem;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 
 	&_logo {
 		text-decoration: none;
 
 		&_typography {
-			font-family: Permanent Marker;
+      margin-left: 1rem;
+			font-family: Calligraffitti;
 			font-size: 3rem;
+		}
+
+    &_typography:hover {
+			text-decoration: underline;
 		}
 
 		&_logo:visited {
@@ -107,11 +112,5 @@
 
   .nav_menu {
     display: none;
-  }
-}
-
-@media (max-width: 481px) {
-  .nav_logo_typography {
-    font-size: 2rem;
   }
 }
