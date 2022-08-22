@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+.container {
+  display: flex;
+  margin: 3rem;
+}
+
+.about {
+  margin-left: 1rem;
+  width: 60%;
+}
+
+.about > p {
+  margin: 0;
+  font-family: Roboto Mono;
+  line-break: auto;
+}
+
+@media (max-width: 990px) {
+  .container {
+    display: block;
+  }
+
+  .about {
+    margin: 1rem 0 0 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 481px) {
+  .container {
+    margin: 1rem;
+  }
+}
