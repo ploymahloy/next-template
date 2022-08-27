@@ -23,12 +23,12 @@ export default function work() {
 						<p>
 							{`Jane Doe is a contemporary painter who lives and works in City,
 							State. Her distinctive personal style emanates joy and peace and
-							expresses the vibrant spirit and atmosphere of the Caribbean
+							expresses the vibrant spirit and atmosphere of here hometown's
 							culture. Picturesque landscapes, tropical birds and flowers,
 							musical instruments, and farmers tending to their fields are all
 							brought to life with contrasting and harmonious colors and bold
 							compositions. As the artist explains, “I am a story teller and I
-							welcome you to join me on this visual journey.” As a child Doe
+							welcome you to join me on this visual journey.” As a child, Doe
 							received prizes for her innate talent. From a young age she has
 							believed, “You can create anything once you see it in your mind.”
 							She earned a Bachelor of Science in Architecture from Some

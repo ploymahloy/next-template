@@ -61,7 +61,15 @@ export default function DefaultLayout(props) {
 					</a>
 				</div>
 			</nav>
-			{children}
+			<div>
+				{children}
+				<footer className={styles.footer}>
+					Template designed by{' '}
+					<a href="https://github.com/ploymahloy" target="_blank">
+						Patrick Mahloy
+					</a>
+				</footer>
+			</div>
 		</>
 	);
 }
