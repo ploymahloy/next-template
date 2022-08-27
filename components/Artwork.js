@@ -20,7 +20,6 @@ export default function Artwork(props) {
 				/>
 				<Modal show={showModal} onClose={() => setShowModal(false)}>
 					<Image src={path} alt="img" height={400} width={275} />
-					<p>Title of Piece</p>
 					<p>{`Here's a description of the artwork. You can discuss inspiration, intent, techniques, whatever. I'm simply a filler paragraph that is meant to be replaced by something better.`}</p>
 				</Modal>
 			</div>
