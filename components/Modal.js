@@ -12,22 +12,27 @@ const OVERLAY_STYLES = {
 };
 
 const MODAL_STYLES = {
-  position: 'fixed',
   boxSizing: 'border-box',
+  position: 'fixed',
+  height: '95vh',
 	top: '50%',
 	left: '50%',
-	transform: 'translate(-50%, -50%)',
-  height: '96vh',
-	padding: '4rem',
-  backgroundColor: '#FFF',
-  border: '1px solid red',
+	padding: '50px',
+  transform: 'translate(-50%, -50%)',
+  overflow: 'scroll',
+	backgroundColor: '#FFF',
 	zIndex: 1000
-}; 
+};
 
 export default function Modal(props) {
 	const { children, onClose, show } = props;
+	const [isBrowser, setIsBrowser] = useState(false);
 
-	const handleClose = (e) => {
+	useEffect(() => {
+		setIsBrowser(true);
+	});
+
+  const handleClose = (e) => {
 		e.preventDefault();
 		onClose();
 	};
@@ -36,14 +41,16 @@ export default function Modal(props) {
 		<>
 			<div style={OVERLAY_STYLES} onClick={handleClose} />
 			<div style={MODAL_STYLES}>
-				<button onClick={onClose}>Close Modal</button>
+				{/* <button onClick={handleClose}>Close Modal</button> */}
 				{children}
 			</div>
 		</>
 	) : null;
 
-	return ReactDOM.createPortal(
-		modalContent,
-		document.getElementById('modal-root')
-	);
+	if (isBrowser) {
+		return ReactDOM.createPortal(
+			modalContent,
+			document.getElementById('modal-root')
+		);
+	}
 }
