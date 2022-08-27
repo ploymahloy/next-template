@@ -29,7 +29,7 @@ export default function Home() {
 					{/* Add the path to your images to the array above called pathArr 
               Remeber, order matters! */}
 
-					{pathArr.map((src) => (
+					{pathArr.map((src, id) => (
             <Artwork key={id} path={src} />
 					))}
 				</div>
