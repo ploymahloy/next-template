@@ -17,7 +17,7 @@
 
 		&_typography {
       margin-left: 1rem;
-			font-family: Calligraffitti;
+			font-family: Calligraffitti, Verdana, Geneva, Tahoma, sans-serif;
 			font-size: 3rem;
 		}
 
@@ -88,6 +88,7 @@
       display: block;
       margin-bottom: 2rem;
       text-decoration: none;
+      color: black;
 		}
 
 		&_link:visited,
