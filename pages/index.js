@@ -5,17 +5,17 @@ import Default from '../layouts/Default';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
-
-  const pathArr = [
-    "/img_1.jpeg",
-    "/img_2.jpeg",
-    "/img_3.jpeg",
-    "/img_4.jpeg",
-    "/img_5.jpeg",
-    "/img_6.jpeg",
-    "/img_7.jpeg",
-    "/img_8.jpeg" 
-  ]
+	const pathArr = [
+		'/img_1.jpeg',
+		'/img_2.jpeg',
+		'/img_3.jpeg',
+		'/img_4.jpeg',
+		'/img_5.jpeg',
+		'/img_6.jpeg',
+		'/img_7.jpeg',
+		'/img_8.jpeg'
+  ];
+  
 	return (
 		<>
 			<Head>
@@ -25,14 +25,13 @@ export default function Home() {
 			</Head>
 			<Default>
         <div className={styles.container}>
-          
+
 					{/* Add the path to your images to the array above called pathArr 
               Remeber, order matters! */}
 
-          {pathArr.map((path) => (
-            <Artwork path={path} />
-          ))};
-          
+					{pathArr.map((src) => (
+						<Artwork path={src} />
+					))}
 				</div>
 			</Default>
 		</>

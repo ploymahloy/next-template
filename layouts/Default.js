@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TiThMenu, TiTimes } from 'react-icons/ti';
 
-import styles from '../styles/DefaultLayout.module.scss';
+import styles from '../styles/Default.module.scss';
 
 export default function DefaultLayout(props) {
 	const { children } = props;

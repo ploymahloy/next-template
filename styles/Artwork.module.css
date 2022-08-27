@@ -1,0 +1,40 @@
+.modal {
+  z-index: 1000;
+}
+
+.image {
+  width: 10%;
+  overflow: hidden;
+}
+
+.image:hover {
+  opacity: 0.7;
+}
+
+.image:hover .center {
+  z-index: 10;
+}
+
+@media (max-width: 1700px) {
+  .image {
+    width: 24%;
+  }
+}
+
+@media (max-width: 990px) {
+  .image {
+    width: 32%;
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 48%;
+  }
+}
+
+@media (max-width: 481px) {
+  .image {
+    width: 100%;
+  }
+}
