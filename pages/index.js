@@ -30,7 +30,7 @@ export default function Home() {
               Remeber, order matters! */}
 
 					{pathArr.map((src) => (
-						<Artwork path={src} />
+            <Artwork key={id} path={src} />
 					))}
 				</div>
 			</Default>
