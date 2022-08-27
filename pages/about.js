@@ -21,7 +21,7 @@ export default function work() {
 					</div>
 					<div className={styles.about}>
 						<p>
-							Jane Doe is a contemporary painter who lives and works in City,
+							{`Jane Doe is a contemporary painter who lives and works in City,
 							State. Her distinctive personal style emanates joy and peace and
 							expresses the vibrant spirit and atmosphere of the Caribbean
 							culture. Picturesque landscapes, tropical birds and flowers,
@@ -41,7 +41,7 @@ export default function work() {
 							Festival. She is a member of the invitational Artist Group
 							Showcase Gallery, a curated art program that rewards artistic
 							excellence, in This City. She has also served as a juror in Some
-							Art Prestige Club in This City.
+							Art Prestige Club in This City.`}
 						</p>
 					</div>
 				</div>
