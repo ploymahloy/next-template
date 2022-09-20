@@ -4,6 +4,7 @@
 
 .image {
   width: 10%;
+  border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -36,6 +37,6 @@
 
 @media (max-width: 481px) {
   .image {
-    width: 100%;
+    width: 80%;
   }
 }
